@@ -7,17 +7,19 @@ displayDate();
 });
 
 
-$(document).ready(function () {
-    var parseHour = $(".time-block")("#currentDay").val()
-})
+// recolors the time-blocks based on currentHour
+var currentHour = moment().format('hh');
+var currentHourInt = parseInt(currentHour);
 
-
-// compare each block id to a time value to colorizing
-$(document).ready(function () {
-    var bgColor = $(input).siblings("#currentDay").val()
-    var parseHour = $(input).siblings("#currentDay").attr("id")
-        $("input").css("background-color", "green")
-    });
+$(document).ready(function() {
+    if (timeBlock == currentHour) {
+        $(this).css("background-color", "red");
+    } else {
+        $(this).css("background-color", "grey");
+    }
+    // nineTime will be recolored
+    // currentHour holds the active time    
+});
 
 
 // saves user-input to the localstorage-- can easily overwrite by changing the input-value and pressing the save button.
