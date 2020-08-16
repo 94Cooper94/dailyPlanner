@@ -7,43 +7,22 @@ displayDate();
 });
 
 
-// creating variables to store user-input text
-$(document).ready(function(){
-    $("#saveBtn").click(function(){
-        var str = $(nineAM).val();
-        localStorage.setItem(nineAM, str);
+$(document).ready(function () {
+    var parseHour = $(".time-block")("#currentDay").val()
+})
+
+
+// compare each block id to a time value to colorizing
+$(document).ready(function () {
+    var bgColor = $(input).siblings("#currentDay").val()
+    var parseHour = $(input).siblings("#currentDay").attr("id")
+        $("input").css("background-color", "green")
     });
+
+
+// saves user-input to the localstorage-- can easily overwrite by changing the input-value and pressing the save button.
+$(".saveBtn").click(function(){
+    var str = $(this).siblings(".time-block").val()
+    var hour = $(this).siblings(".time-block").attr("id")
+    localStorage.setItem(hour, str);
 });
-
-
-// var nineAMText = $("saveBtn").value;
-// localStorage.setItem("nineAM", input);
-// var tenAMText = $("saveBtn");
-// localStorage.setItem("tenAM", input.val());
-// var elevenAMText = $("saveBtn");
-// localStorage.setItem("elevenAM", input.val());
-// var twelvePMText = $("saveBtn");
-// localStorage.setItem("twelvePM", input.val());
-// var onePMText = $("saveBtn");
-// localStorage.setItem("onePM", input.val());
-// var twoPMText = $("saveBtn");
-// localStorage.setItem("twoPM", input.val());
-// var threePMText = $("saveBtn");
-// localStorage.setItem("threePM", input.val());
-// var fourPMText = $("saveBtn");
-// localStorage.setItem("fourPM", input.val());
-// var fivePMText = $("saveBtn");
-// localStorage.setItem("fivePM", input.val());
-
-
-// $(function() {
-//     $(".saveBtn").click(function () {
-//         $(".time-block").val("");
-//     });
-// });
-
-
-// assigning time values to each time-block
-
-
-// need a function that locks/unlocks when user toggles the saveBtn
