@@ -2,7 +2,7 @@
 
 https://94cooper94.github.io/dailyPlanner/.
 
-![Daily Planner Sample](samplePlanner.PNG)
+![Daily Planner Sample](media/samplePlanner.PNG)
 
 Greetings! 
 
@@ -10,4 +10,4 @@ If you're looking for a new and improved method of tracking out your workdays, t
 
 Make sure to mash that like & subscribe button so you don't miss out on future great deals.
 
-![Anotha One](samplePlannerInput.PNG)
+![Anotha One](media/samplePlannerInput.PNG)
