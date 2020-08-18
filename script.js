@@ -1,4 +1,4 @@
-// displays time at the top of the page
+// displays time at the top of the page using moment.js
 $(document).ready(function () {
 function displayDate() {
     $("#currentDay").html(moment().format("LLLL"));
@@ -6,38 +6,42 @@ function displayDate() {
 displayDate();
 });
 
+
+// declaring var to hold hour in whole integer form
+var coloringHour = moment().format('hh');
+
+
+// this function takes a timeBlock, compares it to the currentHour element integer and changes the background color accordingly
 function colorEvents(timeBlock, currentHour, block){
-    if (parseInt(timeBlock) ==parseInt(currentHour)) {
+    if (parseInt(timeBlock) == parseInt(currentHour)) {
         $(block).css("background-color", "pink");
-    } else {
-        $(block).css("background-color", "purple");
+    } if (parseInt(timeBlock) < parseInt(currentHour)) {
+        $(block).css("background-color", "lightgrey")
+    } if (parseInt(timeBlock) > parseInt(currentHour)) {
+        $(block).css("background-color", "green");
     }
 }
-// // recolors the time-blocks based on currentHour
-var coloringHour = moment().format('hh');
-console.log(coloringHour);
-// var coloringHourInt = parseInt(currentHour);
 
-// // assign each timeblock's data-hour to a solid numerical value
+
+// runs the colorEvents() function for each data-hour div
 var hour9 = $("#nineTime").attr("data-hour");
-
-
 colorEvents(hour9, coloringHour,"#nineTime");
-// $("#tenTime").attr("data-hour", moment("10:00 am", "hh:mm a").format("hh"));
-// $("#elevenTime").attr("data-hour", moment("11:00 am", "hh:mm a").format("hh"));
-// $("#twelveTime").attr("data-hour", moment("12:00 pm", "hh:mm a").format("hh"));
-// $("#thirteenTime").attr("data-hour", moment("1:00 pm", "h:mm a").format("hh"));
-// $("#fourteenTime").attr("data-hour", moment("2:00 pm", "h:mm a").format("hh"));
-// $("#fifteenTime").attr("data-hour", moment("3:00 pm", "h:mm a").format("hh"));
-// $("#sixteenTime").attr("data-hour", moment("4:00 pm", "h:mm a").format("hh"));
-// $("#seventeenTime").attr("data-hour", moment("5:00 pm", "h:mm a").format("hh"));
-
-
-// $(document).ready(function() {
-//     
-//     // nineTime will be recolored
-//     // currentHour holds the active time    
-// });
+var hour10 = $("#tenTime").attr("data-hour");
+colorEvents(hour10, coloringHour,"#tenTime");
+var hour11 = $("#elevenTime").attr("data-hour");
+colorEvents(hour11, coloringHour,"#elevenTime");
+var hour12 = $("#twelveTime").attr("data-hour");
+colorEvents(hour12, coloringHour,"#twelveTime");
+var hour13 = $("#thirteenTime").attr("data-hour");
+colorEvents(hour13, coloringHour,"#thirteenTime");
+var hour14 = $("#fourteenTime").attr("data-hour");
+colorEvents(hour14, coloringHour,"#fourteenTime");
+var hour15 = $("#fifteenTime").attr("data-hour");
+colorEvents(hour15, coloringHour,"#fifteenTime");
+var hour16 = $("#sixteenTime").attr("data-hour");
+colorEvents(hour16, coloringHour,"#sixteenTime");
+var hour17 = $("#seventeenTime").attr("data-hour");
+colorEvents(hour17, coloringHour,"#seventeenTime");
 
 
 // saves user-input to the localstorage-- can easily overwrite by changing the input-value and pressing the save button.
