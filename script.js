@@ -7,18 +7,20 @@ displayDate();
 });
 
 
-// declaring var to hold hour in whole integer form
-var coloringHour = moment().format('hh');
 // this function takes a timeBlock, compares it to the currentHour element integer and changes the background color accordingly
 function colorEvents(timeBlock, currentHour, block){
     if (parseInt(timeBlock) == parseInt(currentHour)) {
-        $(block).css("background-color", "pink");
+        $(block).css("background-color", "pink")
     } if (parseInt(timeBlock) < parseInt(currentHour)) {
-        $(block).css("background-color", "lightgrey");
+        $(block).css("background-color", "lightgrey")
     } if (parseInt(timeBlock) > parseInt(currentHour)) {
-        $(block).css("background-color", "green");
+        $(block).css("background-color", "green")
     }
 }
+
+
+// declaring var to hold hour in whole integer form
+var coloringHour = moment().format('kk');
 
 
 // runs the colorEvents() function for each data-hour div
@@ -47,5 +49,4 @@ $(".saveBtn").click(function(){
     var str = $(this).siblings(".time-block").val()
     var hour = $(this).siblings(".time-block").attr("id")
     localStorage.setItem(hour, str);
-    $(".time-block").text(localStorage.getItem());
 });
