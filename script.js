@@ -50,3 +50,15 @@ $(".saveBtn").click(function(){
     var hour = $(this).siblings(".time-block").attr("id")
     localStorage.setItem(hour, str);
 });
+
+
+// pulling the localstorage values to be placed in the input field upon refreshing
+$("#nineTime").val(localStorage.getItem("nineTime"))
+$("#tenTime").val(localStorage.getItem("tenTime"))
+$("#elevenTime").val(localStorage.getItem("elevenTime"))
+$("#twelveTime").val(localStorage.getItem("twelveTime"))
+$("#thirteenTime").val(localStorage.getItem("thirteenTime"))
+$("#fourteenTime").val(localStorage.getItem("fourteenTime"))
+$("#fifteenTime").val(localStorage.getItem("fifteenTime"))
+$("#sixteenTime").val(localStorage.getItem("sixteenTime"))
+$("#seventeenTime").val(localStorage.getItem("seventeenTime"))
