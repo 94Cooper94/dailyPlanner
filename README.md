@@ -1,6 +1,6 @@
 # dailyPlanner
 
-https://94cooper94.github.io/dailyPlanner/.
+## Deployed Site: https://94cooper94.github.io/dailyPlanner/.
 
 ![Daily Planner Sample](media/samplePlanner.PNG)
 
