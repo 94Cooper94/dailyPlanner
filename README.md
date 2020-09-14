@@ -21,3 +21,9 @@ As an added bonus take a look at the deployed site up above and you'll get to se
 Make sure to mash that like & subscribe button so you don't miss out on future projects. Here's an image that's sure to leave you feeling rejuventated.
 
 ![Relaxation](media/header.PNG)
+
+## Technologies Used 
+- GitHub & GitHub Pages
+- HTML & CSS
+- Materialize CSS & JavaScript Bootstrap
+- JavaScript & JQuery
