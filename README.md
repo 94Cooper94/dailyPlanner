@@ -12,11 +12,11 @@ If you're looking for a new and improved method of tracking out your workdays, t
 
 ![Full Composition](media/inputInterface.PNG)
 
-Have you struggled with your work planners of the past because they lacked color coordination? Have your previous planners dropped-the-ball and erased crucial event information from existence? Fear no more, as this planner both colorizes the rows to distinguish what hour of the day it is AND it stores whatever information you input to your local storage!
-
-![Colorization](media/colorizeExample.PNG)
+Have your previous planners dropped-the-ball and erased crucial event information from existence? Fear no more, as this planner stores whatever information you input to your computer's local storage! 
 
 ![Local Storage](media/localStorage.PNG)
+
+As an added bonus take a look at the deployed site up above and you'll get to see the color of each row behave in an interesting way.
 
 Make sure to mash that like & subscribe button so you don't miss out on future projects. Here's an image that's sure to leave you feeling rejuventated.
 
